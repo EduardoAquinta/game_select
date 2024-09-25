@@ -40,7 +40,7 @@ class GameLauncher(tk.Tk):
         self.game_buttons = []
 
         # Define the button style (larger font and padding)
-        button_style = {"font": ("Arial", 24), "padx": 20, "pady": 20}
+        button_style = {"font": ("Arial", 24), "padx": 10, "pady": 10}
 
         for i, game in enumerate(games):
             btn = tk.Button(self, text=game['name'], command=lambda g=game['path']: launch_game(g),
